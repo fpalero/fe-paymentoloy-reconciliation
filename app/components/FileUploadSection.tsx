@@ -29,7 +29,7 @@ const FileUploadSection: React.FC<FileUploadSectionProps> = ({
             formData.append("afile", selectedFiles[0]);
             formData.append("bfile", selectedFiles[1]);
 
-            const response = await fetch(" http://localhost:8080/reconciliations/compares", {
+            const response = await fetch(process.env.VITE_API_URL + "/reconciliations/compares", {
                 method: 'POST',
                 body: formData
             });

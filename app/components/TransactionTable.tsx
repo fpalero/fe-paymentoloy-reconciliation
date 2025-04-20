@@ -95,7 +95,7 @@ const ComparationTable: React.FC<ComparationTableProps> = ({ reconciliation, fil
         formData.append("file", file);
         formData.append("transaction", JSON.stringify(transaction));
 
-        const response = await fetch(" http://localhost:8080/reconciliations/correlations", {
+        const response = await fetch(process.env.VITE_API_URL + "/reconciliations/correlations", {
             method: 'POST',
             body: formData
         });
