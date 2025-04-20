@@ -7,7 +7,7 @@ import ComparationTable from '~/components/ComparationTable';
 import ReconciliationInfo from '~/components/ReconcilationInfo';
 
 // This file is part of the app-welcome package
-export function Welcome() {
+export function Reconciliation() {
 
   const [reconciliations, setReconciliations] = useState<TransactionReconciliation | null>(null);
   const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
