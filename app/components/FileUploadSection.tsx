@@ -23,7 +23,7 @@ const FileUploadSection: React.FC<FileUploadSectionProps> = ({
     // It checks if any file is selected and clears any error messages.
     const handleSubmit = async () => {
         if (selectedFiles.length < 2) {
-            setError("Two files ar required");
+            setError("Two files are required");
         } else if (!error) {
             const formData = new FormData();
             formData.append("afile", selectedFiles[0]);
